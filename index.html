@@ -77,11 +77,20 @@
     </div>
 
     <script>
-        let balance = 0;
+        // Load balance from localStorage
+        let balance = parseInt(localStorage.getItem('balance') || '0');
+        
+        // Update display on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('amount').textContent = balance;
+        });
         
         function addMoney() {
             balance += 50;
             document.getElementById('amount').textContent = balance;
+            
+            // Save to localStorage
+            localStorage.setItem('balance', balance);
         }
     </script>
 </body>
