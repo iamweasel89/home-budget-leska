@@ -1,0 +1,94 @@
+﻿{
+    "project":  "Home Budget (Leska)",
+    "goal":  "кнопка → +50€ → деплой",
+    "folder":  "C:\\Users\\user\\Documents\\GitHub\\home-budget-leska",
+    "stages":  [
+                   {
+                       "id":  "1",
+                       "name":  "Концепт",
+                       "status":  "done",
+                       "description":  "Формализация идеи и определение минимального scope",
+                       "criteria":  [
+                                        "Цель Z1 определена",
+                                        "Макро-этапы выделены"
+                                    ],
+                       "tasks":  [
+
+                                 ]
+                   },
+                   {
+                       "id":  "2",
+                       "name":  "Техрешения",
+                       "status":  "active",
+                       "description":  "Выбор технологий и архитектурных решений",
+                       "criteria":  [
+                                        "✓ Стек выбран (vanilla HTML/CSS/JS)",
+                                        "⏳ Решение по хранению принято",
+                                        "✓ index.html создан"
+                                    ],
+                       "tasks":  [
+                                     {
+                                         "id": "2.1",
+                                         "text": "Добавить localStorage для сохранения",
+                                         "done": false
+                                     }
+                                 ]
+                   },
+                   {
+                       "id":  "3",
+                       "name":  "Прототип",
+                       "status":  "pending",
+                       "description":  "Создание работающей версии на локальной машине",
+                       "criteria":  [
+                                        "Кнопка работает",
+                                        "Счётчик увеличивается",
+                                        "Код чистый"
+                                    ],
+                       "tasks":  [
+
+                                 ]
+                   },
+                   {
+                       "id":  "4",
+                       "name":  "Мобильная",
+                       "status":  "pending",
+                       "description":  "Адаптация под мобильные устройства",
+                       "criteria":  [
+                                        "Responsive дизайн",
+                                        "Touch-friendly кнопки",
+                                        "Тестировано на телефоне"
+                                    ],
+                       "tasks":  [
+
+                                 ]
+                   },
+                   {
+                       "id":  "5",
+                       "name":  "Подготовка",
+                       "status":  "pending",
+                       "description":  "Подготовка к публикации",
+                       "criteria":  [
+                                        "Файлы собраны",
+                                        "README обновлён",
+                                        "Нет hardcoded путей"
+                                    ],
+                       "tasks":  [
+
+                                 ]
+                   },
+                   {
+                       "id":  "6",
+                       "name":  "Деплой",
+                       "status":  "pending",
+                       "description":  "Публикация и доступность",
+                       "criteria":  [
+                                        "GitHub Pages настроен",
+                                        "URL работает",
+                                        "Доступно с телефона"
+                                    ],
+                       "tasks":  [
+
+                                 ]
+                   }
+               ]
+}
