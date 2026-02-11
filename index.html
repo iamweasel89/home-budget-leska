@@ -65,6 +65,30 @@
         .button:active {
             transform: translateY(0);
         }
+
+        .button-reset {
+            background: #ef4444;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .button-reset:hover {
+            background: #dc2626;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(239, 68, 68, 0.3);
+        }
+
+        .button-reset:active {
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body>
@@ -74,6 +98,9 @@
         </div>
         <button class="button" onclick="addMoney()">
             +50€
+        </button>
+        <button class="button-reset" onclick="resetBalance()">
+            Сбросить
         </button>
     </div>
 
@@ -89,9 +116,17 @@
         function addMoney() {
             balance += 50;
             document.getElementById('amount').textContent = balance;
-            
+
             // Save to localStorage
             localStorage.setItem('balance', balance);
+        }
+
+        function resetBalance() {
+            balance = 0;
+            document.getElementById('amount').textContent = balance;
+
+            // Clear localStorage
+            localStorage.removeItem('balance');
         }
     </script>
 </body>
