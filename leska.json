@@ -19,18 +19,20 @@
                    {
                        "id":  "2",
                        "name":  "Техрешения",
-                       "status":  "active",
+                       "status":  "done",
                        "description":  "Выбор технологий и архитектурных решений",
                        "criteria":  [
                                         "✓ Стек выбран (vanilla HTML/CSS/JS)",
-                                        "⏳ Решение по хранению принято",
-                                        "✓ index.html создан"
+                                        "✓ Решение по хранению принято (localStorage)",
+                                        "✓ index.html создан",
+                                        "✓ Кнопки добавлены (+50€ и Сбросить)",
+                                        "✓ localStorage работает"
                                     ],
                        "tasks":  [
                                      {
                                          "id": "2.1",
                                          "text": "Добавить localStorage для сохранения",
-                                         "done": false
+                                         "done": true
                                      }
                                  ]
                    },
